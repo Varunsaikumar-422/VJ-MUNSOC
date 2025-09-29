@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>External Delegate Registration - VJ MUN 2025</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-register.css">
+</head>
+<body>
+    <div class="starry-container registration-background">
+        <div class="stars1"></div><div class="stars2"></div><div class="stars3"></div>
+        <main class="registration-page">
+            <div class="registration-container">
+                <h1 class="registration-title">External Delegate Registration</h1>
+                <p class="subtitle">Join delegates from across the circuit for VJ MUN Second Edition.</p>
+
+                <div class="price-display">
+                    Registration Fee: <span id="price-value">₹1837</span>
+                </div>
+                
+                <form id="mun-form">
+                    <div class="form-grid">
+                        <h3 class="form-section-heading full-width"><span>Delegate Information</span></h3>
+                        <div class="form-group"><label for="name">Full Name</label><input type="text" id="name" name="name" required></div>
+                        <div class="form-group"><label for="email">Email Address</label><input type="email" id="email" name="email" required></div>
+                        <div class="form-group"><label for="contactNumber">Contact Number (WhatsApp)</label><input type="tel" id="contactNumber" name="contactNumber" required></div>
+                        <div class="form-group"><label for="nameOfInstitute">Name of the Institute</label><input type="text" id="nameOfInstitute" name="nameOfInstitute" required></div>
+                        <div class="form-group"><label for="yearOfEducation">Year of Education</label><div class="custom-select-wrapper"><select id="yearOfEducation" name="yearOfEducation" required><option value="" disabled selected>-- Select Year --</option><option value="High School">High School</option><option value="1st Year (UG)">1st Year (UG)</option><option value="2nd Year (UG)">2nd Year (UG)</option><option value="3rd Year (UG)">3rd Year (UG)</option><option value="4th Year (UG)">4th Year (UG)</option><option value="5th Year (UG)">5th Year (UG)</option><option value="Postgraduate">Postgraduate</option></select></div></div>
+                        <div class="form-group"><label for="branch">Branch</label><input type="text" id="branch" name="branch" required></div>
+                        
+                        <h3 class="form-section-heading full-width"><span>Committee Preferences</span></h3>
+                        
+                        <div class="form-group full-width">
+                            <label for="committeePref1">Committee Preference I</label>
+                            <input type="text" id="committeePref1" name="committeePref1" placeholder="e.g., DISEC" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="portfolioPref1_1">Portfolio Preference 1</label>
+                            <input type="text" id="portfolioPref1_1" name="portfolioPref1_1" placeholder="e.g., USA" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="portfolioPref1_2">Portfolio Preference 2</label>
+                            <input type="text" id="portfolioPref1_2" name="portfolioPref1_2" placeholder="e.g., China">
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="committeePref2">Committee Preference II </label>
+                            <input type="text" id="committeePref2" name="committeePref2" placeholder="e.g., Lok Sabha">
+                        </div>
+                        <div class="form-group">
+                            <label for="portfolioPref2_1">Portfolio Preference 1</label>
+                            <input type="text" id="portfolioPref2_1" name="portfolioPref2_1" placeholder="e.g., RAHUL GANDHI">
+                        </div>
+                        <div class="form-group">
+                            <label for="portfolioPref2_2">Portfolio Preference 2</label>
+                            <input type="text" id="portfolioPref2_2" name="portfolioPref2_2" placeholder="e.g., NARENDRA MODI">
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="pastMUNExperience">Past MUN Experience </label>
+                            <textarea id="pastMUNExperience" name="pastMUNExperience" rows="4" placeholder="Conference - Committee - Award"></textarea>
+                        </div>
+
+                        <button type="submit" id="pay-button" class="btn">Proceed to Pay ₹1837</button>
+                    </div>
+                </form>
+                <div id="status-message"></div>
+            </div>
+        </main>
+    </div>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="script-external.js"></script>
+</body>
+</html>
